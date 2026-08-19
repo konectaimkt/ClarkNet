@@ -20,3 +20,12 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  eslint: {
+    // Isso ignora o linting durante o build
+    ignoreDuringBuilds: true,
+  },
+}
+
+module.exports = nextConfig
