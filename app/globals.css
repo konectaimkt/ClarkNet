@@ -1,0 +1,232 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-brand-navy: #030F33;
+  --color-brand-navy-dark: #02124D;
+  --color-brand-blue: #0E4EC4;
+  --color-brand-blue-light: #648DD4;
+  --color-brand-yellow: #FBC205;
+  --color-brand-yellow-light: #FAD75E;
+  --color-brand-gray: #F5F6F8;
+  --color-brand-border: #E2E2E2;
+  --color-brand-graphite: #3A3A3A;
+
+  --font-heading: var(--font-oswald), sans-serif;
+  --font-body: var(--font-inter), sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  @apply text-brand-graphite bg-white antialiased overflow-x-hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Utilities for gradient backgrounds */
+.bg-gradient-navy {
+  background: linear-gradient(135deg, var(--color-brand-navy) 0%, var(--color-brand-navy-dark) 100%);
+}
+.bg-gradient-blue {
+  background: linear-gradient(135deg, var(--color-brand-blue) 0%, var(--color-brand-blue-light) 100%);
+}
+
+
+.cta-light-border {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 52px;
+  padding: 0 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(20, 58, 90, 0.18);
+  text-decoration: none;
+  cursor: pointer;
+  transform: translateZ(0);
+}
+
+.cta-light-border::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: -160%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 285deg,
+    rgba(140, 185, 204, 0.20) 300deg,
+    #8CB9CC 320deg,
+    #FFFFFF 338deg,
+    #8CB9CC 350deg,
+    transparent 360deg
+  );
+  animation: ctaLightRotation 3s linear infinite;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.cta-light-border::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 2px;
+  background: #143A5A;
+  border-radius: 6px;
+  pointer-events: none;
+  transition: background-color 180ms ease;
+}
+
+.cta-light-border span {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.cta-yellow-light-border {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 52px;
+  padding: 0 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #030F33;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(251, 194, 5, 0.18);
+  text-decoration: none;
+  cursor: pointer;
+  transform: translateZ(0);
+}
+
+.cta-yellow-light-border::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: -160%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 285deg,
+    rgba(255, 255, 255, 0.4) 300deg,
+    #FFFFFF 320deg,
+    #FFFFFF 338deg,
+    #FFFFFF 350deg,
+    transparent 360deg
+  );
+  animation: ctaLightRotation 3s linear infinite;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.cta-yellow-light-border::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 2px;
+  background: #FBC205;
+  border-radius: 6px;
+  pointer-events: none;
+  transition: background-color 180ms ease;
+}
+
+.cta-yellow-light-border span {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #030F33;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.3);
+}
+
+@keyframes ctaLightRotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cta-light-border:hover::after {
+  background: #0F314D;
+}
+
+.cta-light-border:hover::before {
+  animation-duration: 1.8s;
+}
+
+.cta-yellow-light-border:hover::after {
+  background: #FBC205;
+  filter: brightness(1.2);
+}
+
+.cta-yellow-light-border:hover::before {
+  animation-duration: 1.8s;
+}
+
+.cta-light-border:focus-visible, .cta-yellow-light-border:focus-visible {
+  outline: 3px solid rgba(140, 185, 204, 0.65);
+  outline-offset: 4px;
+}
+
+.cta-light-border:active, .cta-yellow-light-border:active {
+  transform: translateY(1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cta-light-border::before, .cta-yellow-light-border::before {
+    animation: none;
+    background: #8CB9CC;
+  }
+  .cta-light-border, .cta-yellow-light-border {
+    transition: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .cta-light-border, .cta-yellow-light-border {
+    width: 100%;
+    min-height: 52px;
+    padding: 0 18px;
+  }
+  .cta-light-border span, .cta-yellow-light-border span {
+    font-size: 15px;
+  }
+}
+
+.plan-card-hover {
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.plan-card-hover:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+

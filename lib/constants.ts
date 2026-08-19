@@ -1,0 +1,66 @@
+export const siteConfig = {
+  name: "ClarkNet Telecom",
+  slogan: "CONECTANDO VOCÊ AO MUNDO!",
+  phone: "+55 67 99601-6225",
+  whatsapp: "https://wa.me/5567996016225",
+  instagram: "https://www.instagram.com/clarknet.telecom/",
+  facebook: "#", // Configurable
+  address: {
+    street: "Avenida Genário da Costa Mattos",
+    number: "955",
+    city: "Deodápolis",
+    state: "MS",
+    zip: "79790-000",
+  },
+  officeHours: {
+    weekdays: "Seg-Sex: 08h-11h | 13h-18h",
+    saturday: "Sáb: 08h-12h",
+    sunday: "Dom: Fechado",
+  },
+  cities: [
+    "Deodápolis",
+    "Lagoa Bonita",
+    "Presidente Castelo",
+    "Vila União",
+    "Porto Vilma",
+    "Ipezal",
+  ],
+  plans: [
+    {
+      id: "turbo",
+      name: "Plano Turbo",
+      speed: "500",
+      speedUnit: "Mega",
+      price: "109,90",
+      benefits: [
+        "Clark Play incluso",
+        "Mais de 100 canais de TV e áudio",
+        "Mais de 4 mil filmes e séries no streaming",
+      ],
+      featured: false,
+      whatsappMessage: "Olá, ClarkNet! Tenho interesse no Plano Turbo de 500 Mega por R$ 109,90/mês. Quero consultar disponibilidade e condições para o meu endereço.",
+    },
+    {
+      id: "ultra",
+      name: "Plano Ultra",
+      speed: "800",
+      speedUnit: "Mega",
+      price: "179,90",
+      benefits: [
+        "Clark Play incluso",
+        "Mais de 100 canais de TV e áudio",
+        "Mais de 4 mil filmes e séries no streaming",
+      ],
+      featured: true,
+      whatsappMessage: "Olá, ClarkNet! Tenho interesse no Plano Ultra de 800 Mega por R$ 179,90/mês. Quero consultar disponibilidade e condições para o meu endereço.",
+    },
+  ],
+  links: [
+    { name: "Início", href: "/" },
+    { name: "Planos", href: "/planos" },
+    { name: "Clark Play", href: "/clark-play" },
+    { name: "Cobertura", href: "/cobertura" },
+    { name: "Nossa História", href: "/sobre" },
+    { name: "Atendimento", href: "/atendimento" },
+  ],
+};
