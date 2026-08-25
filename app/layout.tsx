@@ -1,20 +1,22 @@
 import type { Metadata } from 'next';
-import { Inter, Oswald } from 'next/font/google';
+import localFont from 'next/font/local';
 import './globals.css';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { FloatingWhatsApp } from '@/components/floating-whatsapp';
 
-const inter = Inter({
-  subsets: ['latin'],
+const inter = localFont({
+  src: './fonts/inter-latin-wght-normal.woff2',
   variable: '--font-inter',
   display: 'swap',
+  weight: '100 900',
 });
 
-const oswald = Oswald({
-  subsets: ['latin'],
+const oswald = localFont({
+  src: './fonts/oswald-latin-wght-normal.woff2',
   variable: '--font-oswald',
   display: 'swap',
+  weight: '200 700',
 });
 
 export const metadata: Metadata = {
