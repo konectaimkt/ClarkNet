@@ -25,7 +25,7 @@ export function Header() {
   }, []);
 
   useEffect(() => {
-    // Only register logic for mobile menu closing if it exists and dependencies change
+    setIsMobileMenuOpen(false);
   }, [pathname]);
 
   return (
@@ -109,6 +109,7 @@ export function Header() {
             target="_blank" 
             rel="noopener noreferrer"
             className="cta-light-border w-full max-w-xs mt-4"
+            onClick={() => setIsMobileMenuOpen(false)}
           >
             <span>Assine pelo WhatsApp</span>
           </a>
