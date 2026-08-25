@@ -45,8 +45,8 @@ export default function SobrePage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div className="order-2 md:order-1 aspect-square rounded-[24px] overflow-hidden bg-brand-gray border border-gray-100">
-               <img src="https://picsum.photos/seed/historia2/800/800" alt="Fibra Óptica" className="object-cover w-full h-full opacity-90" referrerPolicy="no-referrer" />
+            <div className="order-2 md:order-1 aspect-[4/5] rounded-[24px] overflow-hidden border border-gray-100 shadow-lg">
+               <img src="/sede.jpg" alt="Sede ClarkNet em Deodápolis" className="object-cover object-top w-full h-full hover:scale-105 transition-transform duration-700" />
             </div>
             <div className="order-1 md:order-2">
               <p>

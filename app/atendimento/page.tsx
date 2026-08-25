@@ -50,7 +50,7 @@ export default function AtendimentoPage() {
       desc: "Dúvidas sobre faturas ou seu plano.",
       icon: MessageCircle,
       link: getWhatsAppLink("Olá! Sou cliente e gostaria de tirar uma dúvida."),
-      btn: "Atendimento ao Cliente"
+      btn: "Área do Cliente"
     }
   ];
 
@@ -128,12 +128,27 @@ export default function AtendimentoPage() {
               </div>
             </div>
             
-            <div className="relative h-full min-h-[200px] rounded-[16px] overflow-hidden">
-               {/* Map graphic representation */}
-               <div className="absolute inset-0 bg-brand-gray flex flex-col items-center justify-center text-brand-navy text-center p-6">
-                  <MapPin className="h-12 w-12 text-brand-blue mb-4" />
-                  <span className="font-heading font-bold uppercase tracking-wider text-xl mb-1">Visite nossa sede</span>
-                  <span className="text-sm">Atendimento presencial em Deodápolis/MS.</span>
+            <div className="relative h-full min-h-[250px] md:min-h-[300px] rounded-[16px] overflow-hidden shadow-inner border border-brand-navy/50">
+               <iframe 
+                 src="https://maps.google.com/maps?q=Avenida%20Gen%C3%A1rio%20da%20Costa%20Mattos%2C%20955%2C%20Deod%C3%A1polis%20-%20MS&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                 width="100%" 
+                 height="100%" 
+                 style={{ border: 0 }} 
+                 allowFullScreen={true} 
+                 loading="lazy" 
+                 referrerPolicy="no-referrer-when-downgrade"
+                 className="absolute inset-0 w-full h-full"
+               ></iframe>
+               <div className="absolute bottom-4 left-0 right-0 flex justify-center pointer-events-none">
+                  <a 
+                    href="https://share.google/iDaTx7RyfXK20LQyX" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="bg-brand-yellow text-brand-navy font-bold py-2.5 px-6 rounded-full text-sm shadow-[0_4px_12px_rgba(0,0,0,0.3)] pointer-events-auto hover:-translate-y-1 transition-transform border border-brand-navy/10 flex items-center gap-2"
+                  >
+                     <MapPin className="h-4 w-4" />
+                     Como chegar
+                  </a>
                </div>
             </div>
           </div>

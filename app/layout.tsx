@@ -42,8 +42,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR" className={`${inter.variable} ${oswald.variable} scroll-smooth`}>
-      <body className="min-h-screen flex flex-col font-sans" suppressHydrationWarning>
+    <html lang="pt-BR" className={`${inter.variable} ${oswald.variable} scroll-smooth overflow-x-hidden`}>
+      <body className="min-h-screen flex flex-col font-sans overflow-x-hidden" suppressHydrationWarning>
         <Header />
         <main className="flex-1 flex flex-col pt-[72px] lg:pt-[88px]">
           {children}

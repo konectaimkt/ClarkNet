@@ -23,7 +23,7 @@ export function Logo({ className }: LogoProps) {
   }
 
   return (
-    <div className={cn("relative h-12 w-48", className)}>
+    <div className={cn("relative h-16 w-40 md:h-20 md:w-52 transition-all", className)}>
       <img
         src="/logo.png"
         alt="ClarkNet Telecom"

@@ -185,15 +185,25 @@ export function HomeSections() {
               <p className="text-xs text-gray-500 mt-3">A disponibilidade pode variar conforme o endereço.</p>
             </div>
           </div>
-          <div className="bg-brand-gray p-8 rounded-[24px] flex items-center justify-center aspect-square md:aspect-video lg:aspect-square relative overflow-hidden">
-             {/* Map Placeholder */}
-             <div className="absolute inset-0 bg-brand-navy/5 flex items-center justify-center">
-               <MapPin className="h-32 w-32 text-brand-blue opacity-20" />
+          <div className="bg-brand-gray rounded-[24px] flex items-end justify-center md:justify-start aspect-square md:aspect-video lg:aspect-square relative overflow-hidden group">
+             {/* Office Image */}
+             <div className="absolute inset-0 bg-brand-navy">
+               <img 
+                 src="/sede.jpg" 
+                 alt="Sede ClarkNet em Deodápolis" 
+                 className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
+               />
+               <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/90 via-brand-navy/20 to-transparent"></div>
              </div>
-             <div className="relative bg-white p-6 rounded-[16px] shadow-xl text-center max-w-[250px]">
-                <div className="text-brand-blue font-bold uppercase tracking-wider text-sm mb-1">Sede</div>
+             
+             {/* Info Card */}
+             <div className="relative bg-white/90 backdrop-blur-md p-6 rounded-[16px] shadow-2xl text-center md:text-left max-w-[280px] m-6 border border-white/40 transform translate-y-0 group-hover:-translate-y-2 transition-transform duration-500">
+                <div className="text-brand-blue font-bold uppercase tracking-wider text-sm mb-1">Nossa Sede</div>
                 <div className="text-2xl font-heading font-bold text-brand-navy mb-2">Deodápolis</div>
-                <div className="text-xs text-gray-500">Avenida Genário da Costa Mattos, 955</div>
+                <div className="text-xs text-brand-navy/80 font-medium flex items-center justify-center md:justify-start gap-1.5">
+                  <MapPin className="h-4 w-4 text-brand-yellow shrink-0" />
+                  Avenida Genário da Costa Mattos, 955
+                </div>
              </div>
           </div>
         </div>
