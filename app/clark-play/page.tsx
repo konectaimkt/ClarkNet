@@ -73,12 +73,11 @@ export default function ClarkPlayPage() {
           </div>
           
           <div className="relative">
-             <div className="aspect-[4/3] rounded-[24px] overflow-hidden shadow-2xl relative border-8 border-brand-gray">
+             <div className="aspect-[4/3] rounded-[24px] overflow-hidden shadow-2xl relative border-8 border-brand-gray bg-brand-navy">
                 <img 
-                  src="https://picsum.photos/seed/streaming2/800/600" 
-                  alt="Interface de Streaming genérica" 
-                  className="object-cover w-full h-full"
-                  referrerPolicy="no-referrer"
+                  src="/clarkplay-logo.jpg" 
+                  alt="Clark Play" 
+                  className="object-contain w-full h-full"
                 />
              </div>
              {/* Decorative element */}

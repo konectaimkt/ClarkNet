@@ -92,20 +92,14 @@ export function HomeSections() {
       <Section className="bg-brand-navy text-white overflow-hidden relative">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-brand-blue/20 to-transparent"></div>
         <div className="grid md:grid-cols-2 gap-12 items-center relative z-10">
-          <div className="order-2 md:order-1 relative h-[400px] rounded-[24px] overflow-hidden shadow-2xl">
-             <img 
-                src="https://picsum.photos/seed/streaming/800/600" 
-                alt="Clark Play Entretenimento" 
-                className="object-cover w-full h-full opacity-60"
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-navy to-transparent"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="h-20 w-20 bg-brand-yellow rounded-full flex items-center justify-center pl-2 shadow-[0_0_40px_rgba(251,194,5,0.4)]">
-                  <Play className="h-10 w-10 text-brand-navy fill-brand-navy" />
-                </div>
-              </div>
-          </div>
+             <div className="order-2 md:order-1 relative h-[400px] rounded-[24px] overflow-hidden shadow-2xl bg-brand-navy">
+                <img 
+                   src="/clarkplay-logo.jpg" 
+                   alt="Clark Play Entretenimento" 
+                   className="object-contain w-full h-full"
+                 />
+                 <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/60 to-transparent"></div>
+             </div>
           <div className="order-1 md:order-2 space-y-6">
             <h2 className="text-3xl md:text-5xl font-heading font-bold uppercase tracking-tight">
               Internet e entretenimento no mesmo plano.
