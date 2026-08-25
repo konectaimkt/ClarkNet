@@ -20,7 +20,7 @@ export function Section({ children, className, containerClassName, ...props }: S
       className={cn("py-16 md:py-24", className)}
       {...props}
     >
-      <div className={cn("container mx-auto px-4 md:px-6", containerClassName)}>
+      <div className={cn("w-full max-w-7xl mx-auto px-4 md:px-6", containerClassName)}>
         {children}
       </div>
     </motion.section>

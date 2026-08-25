@@ -100,7 +100,7 @@ export function HeroHome() {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
       </div>
 
-      <div className="container relative z-10 mx-auto px-4 md:px-6 py-12 lg:py-20">
+      <div className="w-full max-w-7xl relative z-10 mx-auto px-4 md:px-6 py-12 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           
           {/* Text Content */}
@@ -115,7 +115,7 @@ export function HeroHome() {
               Internet 100% Fibra Óptica
             </div>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-[1.1] mb-6 uppercase tracking-tight text-balance">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-[1.1] mb-6 uppercase tracking-tight text-balance break-words">
               Internet que conecta você ao que <span className="text-brand-yellow">realmente importa</span>.
             </h1>
             

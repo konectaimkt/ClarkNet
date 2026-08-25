@@ -35,7 +35,7 @@ export function Header() {
         isScrolled ? 'bg-brand-navy shadow-md py-3' : 'bg-brand-navy shadow-sm py-4 lg:py-5'
       )}
     >
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="w-full max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between rounded-[20px]">
           
           {/* Logo */}
