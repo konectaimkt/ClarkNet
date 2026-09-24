@@ -9,6 +9,16 @@ import { useState } from "react";
 
 const plans = [
   { 
+    name: "PLANO CONECTA", 
+    speed: "500", 
+    price: "109,90", 
+    features: [
+      { text: "Conexão estável", icon: Wifi },
+      { text: "Suporte 24h", icon: Clock },
+      { text: "Instalação rápida", icon: Rocket }
+    ] 
+  },
+  { 
     name: "PLANO ULTRA", 
     speed: "800", 
     price: "179,90", 
@@ -17,17 +27,7 @@ const plans = [
       { text: "Mais de 100 canais de TV", icon: Tv },
       { text: "4 mil filmes e séries", icon: Film }
     ] 
-  },
-  { 
-    name: "PLANO CONECTA", 
-    speed: "500", 
-    price: "99,90", 
-    features: [
-      { text: "Conexão estável", icon: Wifi },
-      { text: "Suporte 24h", icon: Clock },
-      { text: "Instalação rápida", icon: Rocket }
-    ] 
-  },
+  }
 ];
 
 function PlanCarousel() {

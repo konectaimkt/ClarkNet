@@ -12,7 +12,7 @@ export const metadata = {
 const faqs = [
   {
     q: "Quais planos estão disponíveis?",
-    a: "Atualmente oferecemos o Plano Turbo (500 Mega) e o Plano Ultra (800 Mega). Ambos são ideais para diferentes perfis de uso, desde navegação básica até alta demanda de streaming e downloads."
+    a: "Atualmente oferecemos o Plano Conecta (500 Mega) e o Plano Ultra (800 Mega). Ambos são ideais para diferentes perfis de uso, desde navegação básica até alta demanda de streaming e downloads."
   },
   {
     q: "O Clark Play está incluído?",
@@ -51,8 +51,23 @@ export default function PlanosPage() {
 
       {/* Plans Section */}
       <Section className="-mt-16 bg-transparent relative z-10" containerClassName="max-w-5xl">
-        <div className="grid md:grid-cols-2 gap-8 items-stretch">
+        <div className="grid md:grid-cols-2 gap-8 items-stretch mb-16">
           {siteConfig.plans.map((plan) => (
+            <PlanCard key={plan.id} plan={plan} />
+          ))}
+        </div>
+
+        <div className="text-center mt-8 mb-12">
+          <h2 className="text-3xl font-heading font-bold uppercase text-brand-navy mb-4">
+            Planos de Internet Rural
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Conexão via rádio com cobertura especial para Rio Dourado e Porto Vilma.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto items-stretch">
+          {siteConfig.ruralPlans.map((plan) => (
             <PlanCard key={plan.id} plan={plan} />
           ))}
         </div>

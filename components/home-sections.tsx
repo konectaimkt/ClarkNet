@@ -79,6 +79,22 @@ export function HomeSections() {
           ))}
         </div>
 
+        {/* PLANOS RURAIS */}
+        <div className="text-center mt-20 mb-12">
+          <h2 className="text-2xl md:text-4xl font-heading font-bold uppercase text-brand-navy mb-4">
+            Planos de Internet Rural
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Conexão via rádio com cobertura especial para Rio Dourado e Porto Vilma.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto items-stretch">
+          {siteConfig.ruralPlans.map((plan) => (
+            <PlanCard key={plan.id} plan={plan} />
+          ))}
+        </div>
+
         <div className="text-center mt-12">
           <Button asChild variant="link">
             <Link href="/planos">

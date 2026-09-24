@@ -25,7 +25,7 @@ export default function TermosPage() {
           <p>Este é um site institucional com o objetivo de apresentar a empresa, seus planos de internet, serviços (como o Clark Play), localidades de cobertura e canais de contato. As informações contidas aqui possuem caráter informativo e comercial.</p>
 
           <h3>2. Disponibilidade e Condições</h3>
-          <p>As ofertas, velocidades e preços dos planos apresentados (Plano Turbo e Plano Ultra) são referências comerciais. A contratação efetiva de qualquer serviço está sujeita à <strong>disponibilidade técnica no endereço do cliente</strong> e à assinatura do contrato de prestação de serviços específico, o qual conterá todas as regras, fidelidades (se houverem) e obrigações detalhadas.</p>
+          <p>As ofertas, velocidades e preços dos planos apresentados (Plano Conecta, Plano Ultra e Planos Rurais) são referências comerciais. A contratação efetiva de qualquer serviço está sujeita à <strong>disponibilidade técnica no endereço do cliente</strong> e à assinatura do contrato de prestação de serviços específico, o qual conterá todas as regras, fidelidades (se houverem) e obrigações detalhadas.</p>
 
           <h3>3. Uso do Formulário de Cobertura</h3>
           <p>Ao utilizar nosso formulário de &quot;Consulta de Cobertura&quot;, você compreende que a mensagem gerada é apenas uma intenção de contato. O simples preenchimento não garante a viabilidade de instalação nem configura um contrato ativo.</p>
