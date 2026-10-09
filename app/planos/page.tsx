@@ -62,7 +62,7 @@ export default function PlanosPage() {
             Planos de Internet Rural
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Conexão via rádio com cobertura especial para Rio Dourado e Porto Vilma.
+            Conexão via rádio com cobertura especial para áreas rurais, consulte nos.
           </p>
         </div>
 

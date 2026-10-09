@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { getWhatsAppLink } from "@/components/floating-whatsapp";
 import { motion, AnimatePresence } from "motion/react";
-import { Wifi, Play, Heart, Zap, ChevronLeft, ChevronRight, Tv, Film, Clock, Rocket, ShieldCheck } from "lucide-react";
+import { Wifi, Play, Heart, Zap, ChevronLeft, ChevronRight, Tv, Film, Clock, Rocket, ShieldCheck, Wrench, Unlock, Router } from "lucide-react";
 import { useState } from "react";
 
 const plans = [
@@ -14,8 +14,12 @@ const plans = [
     price: "109,90", 
     features: [
       { text: "Conexão estável", icon: Wifi },
-      { text: "Suporte 24h", icon: Clock },
-      { text: "Instalação rápida", icon: Rocket }
+      { text: "Suporte Rápido", icon: Clock },
+      { text: "Sem Taxa de Instalação", icon: Wrench },
+      { text: "Sem Fidelidade", icon: Unlock },
+      { text: "Sem Multas", icon: ShieldCheck },
+      { text: "Aparelho Comodato", icon: Router },
+      { text: "Clark Play 2 Acessos", icon: Play }
     ] 
   },
   { 
@@ -23,9 +27,13 @@ const plans = [
     speed: "800", 
     price: "179,90", 
     features: [
-      { text: "Clark Play incluso", icon: Play },
+      { text: "Clark Play 2 Acessos", icon: Play },
       { text: "Mais de 100 canais de TV", icon: Tv },
-      { text: "4 mil filmes e séries", icon: Film }
+      { text: "4 mil filmes e séries", icon: Film },
+      { text: "Sem Taxa de Instalação", icon: Wrench },
+      { text: "Sem Fidelidade", icon: Unlock },
+      { text: "Sem Multas", icon: ShieldCheck },
+      { text: "Aparelho Comodato", icon: Router }
     ] 
   }
 ];

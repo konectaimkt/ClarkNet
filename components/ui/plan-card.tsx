@@ -1,4 +1,4 @@
-import { Check, Info, Play, Tv, Film, Wifi, Clock, Rocket } from "lucide-react";
+import { Check, Info, Play, Tv, Film, Wifi, Clock, Rocket, Wrench, Unlock, ShieldCheck, Router } from "lucide-react";
 import { Button } from "./button";
 import { getWhatsAppLink } from "../floating-whatsapp";
 import { cn } from "@/lib/utils";
@@ -12,7 +12,10 @@ const getIconForBenefit = (benefit: string) => {
   if (benefit.includes("filmes e séries")) return Film;
   if (benefit.includes("Conexão")) return Wifi;
   if (benefit.includes("Suporte")) return Clock;
-  if (benefit.includes("Instalação")) return Rocket;
+  if (benefit.includes("Instalação")) return Wrench;
+  if (benefit.includes("Fidelidade")) return Unlock;
+  if (benefit.includes("Multas")) return ShieldCheck;
+  if (benefit.includes("Comodato")) return Router;
   return Check;
 };
 

@@ -73,11 +73,11 @@ export default function ClarkPlayPage() {
           </div>
           
           <div className="relative">
-             <div className="aspect-[4/3] rounded-[24px] overflow-hidden shadow-2xl relative border-8 border-brand-gray bg-brand-navy">
+             <div className="aspect-square rounded-[24px] overflow-hidden shadow-2xl relative border-8 border-brand-gray bg-brand-navy mx-auto max-w-md w-full">
                 <img 
                   src="/clarkplay-logo.jpg" 
                   alt="Clark Play" 
-                  className="object-contain w-full h-full"
+                  className="object-cover w-full h-full"
                 />
              </div>
              {/* Decorative element */}

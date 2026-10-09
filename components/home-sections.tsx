@@ -85,7 +85,7 @@ export function HomeSections() {
             Planos de Internet Rural
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Conexão via rádio com cobertura especial para Rio Dourado e Porto Vilma.
+            Conexão via rádio com cobertura especial para áreas rurais, consulte nos.
           </p>
         </div>
 
@@ -108,11 +108,11 @@ export function HomeSections() {
       <Section className="bg-brand-navy text-white overflow-hidden relative">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-brand-blue/20 to-transparent"></div>
         <div className="grid md:grid-cols-2 gap-12 items-center relative z-10">
-             <div className="order-2 md:order-1 relative h-[400px] rounded-[24px] overflow-hidden shadow-2xl bg-brand-navy">
+             <div className="order-2 md:order-1 relative aspect-square w-full max-w-md mx-auto rounded-[24px] overflow-hidden shadow-2xl bg-brand-navy">
                 <img 
                    src="/clarkplay-logo.jpg" 
                    alt="Clark Play Entretenimento" 
-                   className="object-contain w-full h-full"
+                   className="object-cover w-full h-full"
                  />
                  <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/60 to-transparent"></div>
              </div>
